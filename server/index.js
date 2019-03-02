@@ -16,3 +16,5 @@ massive(CONNECTION_STRING).then(db => {
     console.log('database connected')
     app.listen(SERVER_PORT,()=>{console.log(`helo ready on port ${SERVER_PORT}`)})
 })
+
+app.post('/auth/register',ctrl.register)
